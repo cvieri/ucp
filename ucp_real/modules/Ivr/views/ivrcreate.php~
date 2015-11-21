@@ -1,0 +1,24 @@
+<div class="col-md-12">
+	<div class="contact-container">
+		<div class="alert" role="alert" style="display:none"></div>
+		<form role="form" id="<?php echo ($add) ? 'add' : 'edit'?>Ivr">
+			<div class="form-group">
+				<label for="name"><?php echo _('IVR Name')?></label>
+				<input type="text" class="form-control" id="name" placeholder="IVR Name" value="<?php echo $ivr['name']?>">
+			</div>
+			<div class="form-group">
+				<label for="description"><?php echo _('IVR Description')?></label>
+				<input type="text" class="form-control" id="description" placeholder="IVR Description" value="<?php echo $ivr['description']?>">
+			</div>
+			
+			
+			<input type="hidden" id="mode" name="mode" value="<?php echo ($add) ? 'add' : 'edit'?>">
+			<?php if($add) {?>
+				<button id="addivr" class="btn btn-default"><?php echo _('Add IVR')?></button>
+			<?php } else { ?>
+				<input type="hidden" id="id" name="id" value="<?php echo $ivr['id']?>">
+				<button id="deleteivr" class="btn btn-default"><i class="fa fa-trash-o"></i> <?php echo _('Delete IVR')?></button>
+			<?php } ?>
+		</form>
+	</div>
+</div>

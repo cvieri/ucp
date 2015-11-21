@@ -1,0 +1,151 @@
+#module-page-ivr {
+	.nav-container {
+		margin-bottom: 5px;
+	}
+	.group-container {
+		background-color: aliceblue;
+		border-radius: 5px;
+		padding: 10px;
+		width:80%;
+		@media only screen and (max-width : 991px) {
+			width:100%;
+		}
+	}
+	.ivr-container {
+		background-color: aliceblue;
+		border-radius: 5px;
+		padding: 10px;
+		width:80%;
+		@media only screen and (max-width : 991px) {
+			width:100%;
+		}
+		.additional {
+			table {
+				width: 100%;
+				.template {
+					display: none;
+				}
+				tr td:first-child {
+					width: 30px;
+					i {
+						font-size: 150%;
+						cursor: pointer;
+						color: rgb(66, 139, 202);
+					}
+				}
+			}
+		}
+		label {
+			text-decoration: underline;
+		}
+		ul {
+			margin-bottom: 0px;
+			li {
+				.clickable {
+					color: #428bca;
+					text-decoration: none;
+					cursor: pointer;
+				}
+				.clickable:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+
+	.ivr-group-list {
+		background-color: aliceblue;
+		.ivr-group {
+			background-color: #fff;
+		}
+		.ivr-group.active {
+			background-color: #428bca;
+			border-radius: 2px;
+			a {
+				color: #ffffff;
+				background-color: #428bca;
+			}
+			a:hover {
+				text-decoration: none;
+				background-color: #428bca;
+				color: #ffffff;
+			}
+		}
+		.ivr-group-inner {
+			i {
+				font-size: 120%;
+				color: #999999;
+				float: right;
+				margin-top: 1px;
+			}
+			.badge {
+				font-size: 80%;
+				float: right;
+			}
+		}
+		.ivr-group.sub {
+			margin-left: 15px;
+			background-color: rgb(252, 253, 255);
+			.contact-group-inner {
+				font-size: 85%;
+			}
+		}
+		.ivr-group {
+			a {
+				position: relative;
+				display: block;
+				padding: 3px 8px;
+				border-radius: 2px;
+			}
+			a:hover {
+				text-decoration: none;
+				background-color: #eeeeee;
+				color: #2a6496;
+			}
+		}
+	}
+
+	.ivr-table {
+		font-size: 90%;
+		margin-bottom: inherit;
+		.ivr-header {
+			th:not(.noclick) {
+				i {
+					float: right;
+				}
+				cursor: pointer;
+			}
+			th:not(.noclick):hover {
+				background-color:#f5f5f5;
+			}
+			background-color: aliceblue;
+		}
+		.ivr-item {
+			td {
+				cursor: pointer;
+			}
+			color: black;
+			background-color: rgba(255, 255, 255, 0.5);
+			.actions {
+				a {
+					color: black;
+					text-decoration: none;
+					cursor: pointer;
+				}
+				i {
+					color:black;
+				}
+			}
+			i{
+				font-size: large;
+				color: grey;
+			}
+			i.out {
+				color: #7a16af;
+			}
+			i.in {
+				color: #0fc61b;
+			}
+		}
+	}
+}
