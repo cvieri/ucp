@@ -1,0 +1,60 @@
+<module>
+	<rawname>webrtc</rawname>
+	<name>WebRTC Phone</name>
+	<version>12.0.1</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<repo>standard</repo>
+	<description>
+		The WebRTC Module allows an Administrator to enable a "WebRTC phone" that can be attached to a user's
+		extension which they can connect to through FreePBX User Control Panel, this WebRTC phone will then
+		receive phone calls at the same time as the users extension using user and device mode behind the scenes.
+		If you have User and Device Mode enabled any extension you enable the WebRTC Phone a duplicate extension of 99XXXX
+		will be created (where XXXX is the original extension number), when the user then views the web interface of the WebRTC
+		phone they will be connected to device 99XXXX which will receive calls from the original extension
+	</description>
+	<changelog>
+		*12.0.1* FREEPBX-8673 Fix SDP challenges with Chrome, update jssip lib. Remove experimental modes
+		*12.0.0beta15* FREEPBX-8808 Check for valid STUN Server in Sip Settings
+		*12.0.0beta14* Remove settings if device doesnt exist
+		*12.0.0beta13* Fix return type of getClientsEnabled to be an array, not boolean/array
+		*12.0.0beta12* Add ability to get all enabled WebRTC extensions
+		*12.0.0beta11* Remove debug
+		*12.0.0beta10* New functionality for FREEPBX-8434
+		*12.0.0beta9* Updates in Contact Manager
+		*12.0.0beta8* On originate push default extension to the begining
+		*12.0.0beta7* Allow lookup in originate through contact manager means
+		*12.0.0beta6* Hide phone in UCP if unsupported in browser
+		*12.0.0beta5* Fix ability to disable WebRTC.
+		*12.0.0beta4* Uninstall should delete created extensions
+		*12.0.0beta3* Fix logout process so it doesnt stop the page
+		*12.0.0beta2* Bug fix
+		*12.0.0beta1* Experimental Hold Support Now works in chrome and firefox
+		*12.0.0alpha11* Styling tweaks
+		*12.0.0alpha10* FREEPBX-7974 Allow calls to be originated in UCP
+		*12.0.0alpha9* Tweaks for UCP
+		*12.0.0alpha8* Give more messages to users in User Manager/UCP
+		*12.0.0alpha7* Support for Asterisk 13
+		*12.0.0alpha6* Work for terribly slow wireless networks
+		*12.0.0alpha5* Add Experimental hold support
+		*12.0.0alpha4* Remove ability to use webrtc in browsers that don't support it
+		*12.0.0alpha1* Redub for UCP and make it work in ARI (for testing really)
+		*2.11.0.0beta7* FREEI-199 (WebRTC and Bria Extensions Shouldn't be Included in Extension Count)
+		*2.11.0.0beta6* Add Licenses
+		*2.11.0.0beta5* Fix licensing and add copyright and release
+	</changelog>
+	<info></info>
+	<category>Connectivity</category>
+	<depends>
+		<engine>asterisk 11.5</engine>
+		<module>certman ge 12.0.0alpha1</module>
+		<module>core ge 12.0.1beta9</module>
+		<module>ucp ge 12.0.0beta7</module>
+		<module>sipsettings ge 12.0.9</module>
+		<version>12.0.1beta34</version>
+	</depends>
+	<supported>
+		<version>12.0</version>
+	</supported>
+</module>

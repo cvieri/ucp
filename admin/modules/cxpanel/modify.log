@@ -1,0 +1,22 @@
+(01 Aug 2015 04:11:13)-[DEBUG]: Starting modify script
+(01 Aug 2015 04:11:13)-[DEBUG]: Agent interface type: peer
+(01 Aug 2015 04:11:13)-[DEBUG]: Agent login context: from-queue
+(01 Aug 2015 04:11:13)-[DEBUG]: Starting REST connection to http://localhost:58080/communication_manager/api/resource/
+(01 Aug 2015 04:11:13)-[DEBUG]: Checking core server default
+(01 Aug 2015 04:11:13)-[ERROR]: Failed to check for core server
+exception 'CXPest_UnknownResponse' in /var/www/html/admin/modules/cxpanel/lib/CXPest.php:301
+Stack trace:
+#0 /var/www/html/admin/modules/cxpanel/lib/CXPest.php(238): CXPest->checkLastResponseForError()
+#1 /var/www/html/admin/modules/cxpanel/lib/CXPest.php(65): CXPest->doRequest(Resource id #155)
+#2 /var/www/html/admin/modules/cxpanel/modify.php(204): CXPest->get('server/coreServ...')
+#3 /var/www/html/admin/modules/cxpanel/modify.php(113): check_core_server()
+#4 {main}
+(01 Aug 2015 04:11:13)-[DEBUG]: Looking up core server id for slug default
+(01 Aug 2015 04:11:13)-[ERROR]: Failed to lookup core server id
+exception 'CXPest_UnknownResponse' in /var/www/html/admin/modules/cxpanel/lib/CXPest.php:301
+Stack trace:
+#0 /var/www/html/admin/modules/cxpanel/lib/CXPest.php(238): CXPest->checkLastResponseForError()
+#1 /var/www/html/admin/modules/cxpanel/lib/CXPest.php(65): CXPest->doRequest(Resource id #156)
+#2 /var/www/html/admin/modules/cxpanel/modify.php(182): CXPest->get('server/coreServ...')
+#3 /var/www/html/admin/modules/cxpanel/modify.php(116): get_core_server_id()
+#4 {main}

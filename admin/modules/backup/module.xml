@@ -1,0 +1,62 @@
+<module>
+	<rawname>backup</rawname>
+	<repo>standard</repo>
+	<name>Backup &amp; Restore</name>
+	<version>12.0.15</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<category>Admin</category>
+	<description>Backup &amp; Restore for your FreePBX environment</description>
+	<menuitems>
+		<backup needsenginedb="yes">Backup &amp; Restore</backup>
+		<backup_servers needsenginedb="yes" hidden="true">Backup &amp; Restore - Servers</backup_servers>
+		<backup_templates needsenginedb="yes" hidden="true">Backup &amp; Restore - Templates</backup_templates>
+		<backup_restore needsenginedb="yes" hidden="true">Backup &amp; Restore - Restore</backup_restore>
+	</menuitems>
+	<depends>
+		<module>sipsettings ge 12.0.3</module>
+	</depends>
+	<changelog>
+		*12.0.15* Massively speed up restore
+		*12.0.14.2* Ensure that HA tables are never restored.
+		*12.0.13* FREEPBX-8562 Fix NAT regression
+		*12.0.12* FREEPBX-8563 Have backup email pull from sysadmin from is sysadmin exist
+		*12.0.11* FREEPBX-8501 active / passive selection on ftp backup server
+		*12.0.10* FREEPBX-8112 - Trigger sysadmin hooks, if present.
+		*12.0.9* FREEPBX-8045 - onclick won't bind to new elements being added to the DOM
+		*12.0.8* FREEPBX-8059 Re-fix.
+		*12.0.7* FREEPBX-8059
+		*12.0.6* FREEPBX-5690 and FREEPBX-6978
+		*12.0.5* FREEPBX-7896 Backup email missing from Advanced Settings
+		*12.0.4* FREEPBX-7842
+		*12.0.3* Another fix for inital installing
+		*12.0.2* #7682 and #7433
+		*12.0.1* Updating Issue
+		*12.0.0* #5751 Send Email on backup
+		*2.11.0.18* #7347
+		*2.11.0.17* #7358
+		*2.11.0.16* #7383
+		*2.11.0.15* #7364
+		*2.11.0.14* #7354
+		*2.11.0.13* #7349
+		*2.11.0.12* #7300
+		*2.11.0.11* Fix License to be  v3+
+		*2.11.0.10* #7239
+		*2.11.0.9* Generate a license file
+		*2.11.0.8* #5832 Ensure AstDB is regenerated on restore
+		*2.11.0.7* #7155
+		*2.11.0.6* #6380
+		*2.11.0.5* #6862, #6863
+		*2.11.0.4* #6761
+		*2.11.0.3* #6772
+		*2.11.0.2* #6730, #6549, #6553
+		*2.11.0.1* #6083
+		*2.11.0.0* #6555
+	</changelog>
+	<supported>
+		<version>12.0</version>
+	</supported>
+	<location>release/2.11/backup-2.11.0.5.tgz</location>
+	<md5sum>ac5c29013681c99d4b4f224624dc0d34</md5sum>
+</module>

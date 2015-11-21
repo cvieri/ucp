@@ -1,0 +1,63 @@
+<module>
+	<rawname>parking</rawname>
+	<repo>standard</repo>
+	<name>Parking Lot</name>
+	<version>12.0.12</version>
+	<publisher>FreePBX</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<category>Applications</category>
+	<description>Manages parking lot extensions and other options.
+	Parking is a way of putting calls "on hold", and then picking them up from any extension.
+	</description>
+	<changelog>
+		*12.0.12* Localize default parking lot
+		*12.0.11* Dont localize numbers
+		*12.0.10* FREEPBX-8905 Parking module doesn't set return Alert-Info properly - patch attached
+		*12.0.9* FREEPBX-8904 Fix park return routing for asterisk 13.2 and higher
+		*12.0.8* FREEPBX-8443 Better descriptions for 12 systems
+		*12.0.7* FREEPBX-8475 Fix Empty Context created
+		*12.0.6* Handle transfers better and fix for bug in asterisk 12
+		*12.0.5* Fixes for how Asterisk handles parking directly into a slot
+		*12.0.4* Support for new call recording
+		*12.0.3* Get rid of warning message, fixes for Asterisk 12
+		*12.0.2* FREEPBX-6453 Allows Blind and Attended transfer into specific slot.
+		*12.0.1alpha4* Fixes for recordings when call is picked up, also fix FREEPBX-7129, FREEPBX-7229
+		*12.0.1alpha3* Using insert_id function from wrapper
+		*12.0.1alpha2* Use genConfig
+		*12.0.1alpha1* Update/Upgrade for Asterisk 12
+		*2.11.0.14* Using insert_id function from wrapper
+		*2.11.0.13* Changed the specified lines in the files mentioned to add gettext formatting
+		*2.11.0.12* Fixed #6871, Basically dont use Asterisk's built in come back to origin, do it ourselves. Also Fixed #6774, act like the rest of FreePBX
+		*2.11.0.11* Fix typo
+		*2.11.0.10* Add hint for the Parking Lot as a whole
+		*2.11.0.9* Set default destination to terminate call, hangup
+		*2.11.0.8* Add min range to number boxes
+		*2.11.0.7* #6375 proper fix
+		*2.11.0.6* Worked on #6378 Parking Destination and Alternate destination problems, still not perfect. Fixes #6343
+		*2.11.0.5* Fixes #6375 park retrieve issue and needsreload
+		*2.11.0.4* #6374 sql error updating
+		*2.11.0.3* fix some localization
+		*2.11.0.2* Cleanup of wording
+		*2.11.0.1* Completely rewritten from the ground up. Fixes #5498, #5549
+		*2.10.0.2* #5901
+		*2.10.0.1* #5478
+		*2.10.0.0* new version changes
+		*2.9.0.4* #4965, #4972
+		*2.9.0.3* #4914
+		*2.9.0.2* #4224
+		*2.9.0.1* #4740
+		*2.9.0.0* #4655
+	</changelog>
+	<menuitems>
+		<parking>Parking</parking>
+	</menuitems>
+	<depends>
+		<module>callrecording ge 12.0.1</module>
+	</depends>
+	<supported>
+		<version>12.0</version>
+	</supported>
+	<location></location>
+	<md5sum></md5sum>
+</module>

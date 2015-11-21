@@ -1,0 +1,417 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for parking
+# Copyright (C) 2008-2015 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-20 13:20-0400\n"
+"PO-Revision-Date: 2015-02-20 19:45-0500\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+
+#: install.php:148
+#, php-format
+msgid "%s no longer supported"
+msgstr ""
+
+#: views/lot.php:115
+msgid ""
+"Alert-Info to add to the call prior to sending back to the Originator or to "
+"the Alternate Destination."
+msgstr ""
+
+#: views/lot.php:164
+msgid "Alternate Destination"
+msgstr "可选目的地"
+
+#: views/lot.php:139 views/lot.php:156
+msgid "Announcement:"
+msgstr "公告："
+
+#: parking.i18n.php:6 parking.i18n.php:12
+msgid "Applications"
+msgstr ""
+
+#: views/lot.php:104
+msgid ""
+"Asterisk: parkedcallreparking. Enables or disables DTMF based parking when "
+"picking up a parked call."
+msgstr ""
+
+#: views/lot.php:91
+msgid ""
+"Asterisk: parkedcalltransfers. Enables or disables DTMF based transfers when "
+"picking up a parked call."
+msgstr ""
+
+#: views/overview.php:23
+msgid "Attended Transfer call into Park lot nn"
+msgstr ""
+
+#: views/overview.php:15
+msgid ""
+"Attended Transfer call to the Parking Lot Extension. The lot number will be "
+"announced to the parker"
+msgstr ""
+
+#: views/overview.php:19
+#, php-format
+msgid "Attended transfer to lot %d"
+msgstr ""
+
+#: views/lot.php:127
+msgid "Auto CallerID Prepend:"
+msgstr ""
+
+#: views/lot.php:59
+msgid "BLF Capabilities:"
+msgstr "BLF功能"
+
+#: views/lot.php:85 views/lot.php:97 views/lot.php:109
+msgid "Both"
+msgstr ""
+
+#: views/lot.php:83 views/lot.php:95 views/lot.php:107
+msgid "Caller"
+msgstr ""
+
+#: views/lot.php:121
+msgid "CallerID Prepend:"
+msgstr "主叫ID前加上字符串："
+
+#: views/lot.php:167
+msgid "Come Back to Origin:"
+msgstr ""
+
+#: install.php:79
+msgid "Default Lot"
+msgstr ""
+
+#: install.php:9
+msgid "Defines the Feature Code to use for Direct Call Pickup"
+msgstr ""
+
+#: views/lot.php:176
+msgid "Destination:"
+msgstr ""
+
+#: views/lot.php:63
+msgid "Disable"
+msgstr ""
+
+#: install.php:62
+msgid "ERROR: too many default lots detected, deleting and reinitializing"
+msgstr ""
+
+#: views/lot.php:62
+msgid "Enable"
+msgstr ""
+
+#: views/lot.php:59
+msgid "Enable this to have Asterisk 'hints' generated to use with BLF buttons."
+msgstr ""
+
+#: views/overview.php:11
+msgid "Example usage"
+msgstr "举例"
+
+#: views/lot.php:132
+msgid "Extension"
+msgstr ""
+
+#: views/lot.php:68
+msgid "Find Slot:"
+msgstr "查找驻留地"
+
+#: views/lot.php:72
+msgid "First"
+msgstr ""
+
+#: functions.inc/registries.php:23 functions.inc/registries.php:32
+msgid "INUSE"
+msgstr ""
+
+#: install.php:78
+msgid "Initializing default parkinglot.."
+msgstr ""
+
+#: parking.i18n.php:8
+msgid ""
+"Manages parking lot extensions and other options.\tParking is a way of "
+"putting calls "
+msgstr ""
+
+#: views/lot.php:133
+msgid "Name"
+msgstr ""
+
+#: views/lot.php:98 views/lot.php:110
+msgid "Neither"
+msgstr ""
+
+#: views/lot.php:71
+msgid "Next"
+msgstr ""
+
+#: views/lot.php:68
+msgid ""
+"Next: If you want the parking lot to seek the next sequential parking slot "
+"relative to the the last parked call instead of seeking the first available "
+"slot. First: Use the first parking lot slot available"
+msgstr ""
+
+#: views/lot.php:171
+msgid "No"
+msgstr ""
+
+#: views/lot.php:86 views/lot.php:130 views/lot.php:144
+msgid "None"
+msgstr "无"
+
+#: views/lot.php:25
+msgid "Number of Slots:"
+msgstr "驻留数量："
+
+#: views/lot.php:139 views/lot.php:156
+msgid ""
+"Optional message to be played to the call prior to sending back to the "
+"Originator or the Alternate Destination."
+msgstr ""
+
+#: views/header.php:5
+msgid "Overview"
+msgstr "总览"
+
+#: install.php:7
+msgid "Park Prefix"
+msgstr ""
+
+#: views/overview.php:31
+#, php-format
+msgid "Park Yourself into lot %d"
+msgstr ""
+
+#: views/overview.php:35
+msgid "Park Yourself into lot nn"
+msgstr ""
+
+#: views/overview.php:27
+msgid "Park Yourself. The lot number will be announced to you"
+msgstr ""
+
+#: functions.inc/registries.php:22
+#, php-format
+msgid "ParkPlus: ParkCall %s"
+msgstr ""
+
+#: functions.inc/registries.php:31
+#, php-format
+msgid "ParkPlus: PickupSlot %s"
+msgstr ""
+
+#: views/lot.php:84 views/lot.php:96 views/lot.php:108
+msgid "Parked"
+msgstr ""
+
+#: views/lot.php:37
+msgid "Parked Music Class:"
+msgstr "驻留背景音乐"
+
+#: parking.i18n.php:10
+msgid "Parking"
+msgstr ""
+
+#: views/lot.php:115
+msgid "Parking Alert-Info:"
+msgstr "驻留警告信息："
+
+#: parking.i18n.php:4 views/header.php:12
+msgid "Parking Lot"
+msgstr "驻留区"
+
+#: views/lot.php:7
+msgid "Parking Lot Extension:"
+msgstr "驻留分机："
+
+#: views/lot.php:13
+msgid "Parking Lot Name:"
+msgstr "驻留地名称"
+
+#: views/lot.php:4
+msgid "Parking Lot Options"
+msgstr "呼叫驻留选项"
+
+#: views/lot.php:19
+msgid "Parking Lot Starting Position:"
+msgstr "驻留地起始位置"
+
+#: functions.inc/registries.php:59 functions.inc/registries.php:94
+#, php-format
+msgid "Parking Lot: %s (%s)"
+msgstr ""
+
+#: views/lot.php:31
+msgid "Parking Timeout (seconds):"
+msgstr "驻留超时（秒）"
+
+#: views/lot.php:80
+msgid "Pickup Courtesy Tone:"
+msgstr ""
+
+#: install.php:6
+msgid "Pickup ParkedCall Any"
+msgstr ""
+
+#: install.php:8
+msgid "Pickup ParkedCall Prefix"
+msgstr ""
+
+#: views/lot.php:13
+msgid "Provide a Descriptive Title for this Parking Lot"
+msgstr ""
+
+#: views/lot.php:104
+msgid "Re-Parking Capability:"
+msgstr ""
+
+#: views/lot.php:77
+msgid "Returned Call Behavior"
+msgstr "返回的通话行为"
+
+#: views/lot.php:131
+msgid "Slot"
+msgstr ""
+
+#: views/lot.php:121
+msgid ""
+"String to prepend to the current Caller ID associated with the parked call "
+"prior to sending back to the Originator or the Alternate Destination."
+msgstr ""
+
+#: views/lot.php:185
+msgid "Submit Changes"
+msgstr "提交更改"
+
+#: views/overview.php:38
+msgid ""
+"The Parking Lot Extension and lot numbers can be changed using this module"
+msgstr ""
+
+#: views/lot.php:19
+msgid "The starting postion of the parking lot"
+msgstr ""
+
+#: views/lot.php:31
+msgid ""
+"The timeout period in seconds that a parked call will attempt to ring back "
+"the original parker if not answered"
+msgstr ""
+
+#: views/lot.php:25
+msgid ""
+"The total number of parking lot spaces to configure. Example, if 70 is the "
+"extension and 8 slots are configured, the parking slots will be 71-78. Users "
+"can transfer a call directly into a parking slot."
+msgstr ""
+
+#: views/lot.php:127
+msgid ""
+"These options will be appended after CallerID Prepend if set. Otherwise they "
+"will appear first. The automatic options are as follows:<ul><li><strong>None:"
+"</strong> No Automatic Prepend</li><li><strong>Slot:</strong> Parking lot "
+"they were parked on</li><li><strong>Extension:</strong> The extension number "
+"that parked the call</li><li><strong>Name:</strong> The user who parked the "
+"call</li></ul>"
+msgstr ""
+
+#: views/lot.php:7
+msgid "This is the extension where you will transfer a call to park it"
+msgstr ""
+
+#: views/lot.php:37
+msgid ""
+"This is the music class that will be played to a parked call while in the "
+"parking lot UNLESS the call flow prior to parking the call explicitly set a "
+"different music class, such as if the call came in through a queue or ring "
+"group."
+msgstr ""
+
+#: views/overview.php:1
+msgid "This module is used to configure Parking Lot(s)"
+msgstr ""
+
+#: views/lot.php:91
+msgid "Transfer Capability:"
+msgstr ""
+
+#: views/lot.php:167
+msgid ""
+"Where to send a parked call that has timed out. If set to yes then the "
+"parked call will be sent back to the originating device that sent the call "
+"to this parking lot. If the origin is busy then we will send the call to the "
+"Destination selected below. If set to no then we will send the call directly "
+"to the destination selected below"
+msgstr ""
+
+#: views/lot.php:80
+msgid "Whom to play the courtesy tone to when a parked call is retrieved."
+msgstr ""
+
+#: views/lot.php:170
+msgid "Yes"
+msgstr ""
+
+#: views/overview.php:6
+#, php-format
+msgid ""
+"You can also transfer directly to a lot number (%d through %d) and if that "
+"lot is empty, your call will be parked there"
+msgstr ""
+
+#: views/overview.php:4
+#, php-format
+msgid ""
+"You can transfer a call to the Parking Lot Extension (%d by default), the "
+"call will then be placed into a lot (%d-%d by default) and the lot number "
+"will be announced to you"
+msgstr ""
+
+#: views/lot.php:156
+msgid ""
+"You must install and enable the \"Systems Recordings\" Module to edit this "
+"option"
+msgstr ""
+
+#: install.php:49
+#, php-format
+msgid "creating table %s if needed"
+msgstr ""
+
+#: views/lot.php:50
+msgid "default"
+msgstr ""
+
+#: install.php:81
+msgid "done"
+msgstr ""
+
+#: install.php:158
+msgid "migrated ... dropping old table parkinglot"
+msgstr ""
+
+#: install.php:87
+msgid "migrating old parkinglot data"
+msgstr ""
+
+#: views/overview.php:22 views/overview.php:34
+msgid "nn"
+msgstr ""

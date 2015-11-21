@@ -1,0 +1,42 @@
+<module>
+	<rawname>digium_phones</rawname>
+	<repo>standard</repo>
+	<type>setup</type>
+	<category>Connectivity</category>
+	<name>Digium Phones Config</name>
+	<version>2.11.2.2</version>
+	<publisher>Digium</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<candisable>yes</candisable>
+	<canuninstall>yes</canuninstall>
+	<changelog>
+		*2.11.2.2* Added options for default_fontsize and call_waiting_tone
+		*2.11.2.1* Fix for class loading problem
+		*2.11.2.0* Cleanup, support for DPMA 2.1, D45, Logo upload, firmware download enhanced, Ringtones configured to phone
+		*2.11.1.1* update to correct GPL v3 license and move all copyright into proper functions.inc.php file.
+		*2.11.1.0* Relocate firmware directory
+		*2.11.0.10* Use abstracted function
+		*2.11.0.9* Improve error reporting of firmware download
+		*2.11.0.8* When reloading, we explicitly skip astman
+		*2.11.0.7* Retrieve_conf speed improvements
+		*2.11.0.6* Recover from missing firmware directory
+		*2.11.0.5* Fixes for Custom Apps, External Line Edit, Download
+			and select firmware, Queue Members, Status Entries
+		*2.11.0.4* Fixed general settings save, dragdrop pb and net
+		*2.11.0.3* Fixed Not Saving Data #6747
+		*2.11.0.1* FreePBX/Schmoozecom Release
+		*2.10.0.9.3* Styling
+		*0.1* initial commit
+	</changelog>
+	<depends>
+		<phpversion>5.2.0</phpversion>
+		<version>2.10</version>
+	</depends>
+	<menuitems>
+		<digium_phones needsenginedb="yes">Digium Phones</digium_phones>
+	</menuitems>
+	<supported>
+		<version>2.11</version>
+	</supported>
+</module>

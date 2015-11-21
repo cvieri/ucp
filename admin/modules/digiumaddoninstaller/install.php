@@ -1,0 +1,101 @@
+<?php
+
+global $db;
+global $amp_conf;
+global $asterisk_conf;
+
+if(!extension_loaded('digium_register') && !function_exists('dl')) {
+	echo 'This Module Requires The Digium RPM to be installed (php-digium_register-3.0.5-1_centos6.i686.rpm). Please see this page for more information: <a target="_blank" href="http://wiki.freepbx.org/display/F2/Digium+Addons">http://wiki.freepbx.org/display/F2/Digium+Addons</a>';
+	return false;
+}
+
+$sql = array();
+
+$sql[] = "CREATE TABLE IF NOT EXISTS digiumaddoninstaller_system (
+	`id` INT UNSIGNED PRIMARY KEY auto_increment,
+	`variable` VARCHAR(50) NOT NULL UNIQUE DEFAULT '',
+	`value` VARCHAR(255) NOT NULL DEFAULT ''
+);";
+
+$sql[] = "CREATE TABLE IF NOT EXISTS digiumaddoninstaller_addons (
+	`id` VARCHAR(25) PRIMARY KEY,
+	`name` VARCHAR(255) NOT NULL DEFAULT '',
+	`description` TEXT,
+	`link` VARCHAR(255) NOT NULL DEFAULT '',
+	`documentation` VARCHAR(255) NOT NULL DEFAULT '',
+	`product_index` INT UNSIGNED NOT NULL,
+	`category_index` INT UNSIGNED NOT NULL,
+	`register_limit` INT UNSIGNED NOT NULL DEFAULT 0,
+	`status` VARCHAR(50) NOT NULL DEFAULT 'not_installed',
+	`supported_version` VARCHAR(50) DEFAULT '0.1',
+	`is_installed` BOOLEAN NOT NULL DEFAULT false,
+	`is_uptodate` BOOLEAN NOT NULL DEFAULT false,
+	`is_registered` BOOLEAN NOT NULL DEFAULT false
+);";
+
+$sql[] = "CREATE TABLE IF NOT EXISTS digiumaddoninstaller_downloads (
+	`id` VARCHAR(25) PRIMARY KEY,
+	`name` VARCHAR(100) NOT NULL DEFAULT '',
+	`package` VARCHAR(255) NOT NULL DEFAULT '{ast}-{name}',
+	`tarball` VARCHAR(255) NOT NULL DEFAULT '{name}-{astver}_{version}-{arch}.tar.gz',
+	`path` VARCHAR(255) NOT NULL DEFAULT '',
+	`installed_version` VARCHAR(100) NOT NULL DEFAULT '',
+	`available_version` VARCHAR(100) NOT NULL DEFAULT ''
+);";
+
+$sql[] = "CREATE TABLE IF NOT EXISTS digiumaddoninstaller_addons_downloads (
+	`id` INT UNSIGNED NOT NULL PRIMARY KEY auto_increment,
+	`addon_id` VARCHAR(25),
+	`download_id` VARCHAR(25)
+);";
+
+$sql[] = "CREATE TABLE IF NOT EXISTS digiumaddoninstaller_downloads_bits (
+	`id` INT UNSIGNED PRIMARY KEY auto_increment,
+	`download_id` VARCHAR(25) NOT NULL,
+	`bit` VARCHAR(10)
+)";
+
+$sql[] = "CREATE TABLE IF NOT EXISTS digiumaddoninstaller_downloads_ast_versions (
+	`id` INT UNSIGNED PRIMARY KEY auto_increment,
+	`download_id` VARCHAR(25) NOT NULL,
+	`ast_version` VARCHAR(50) NOT NULL
+)";
+
+$sql[] = "CREATE TABLE IF NOT EXISTS digiumaddoninstaller_registers (
+	`id` INT UNSIGNED PRIMARY KEY auto_increment,
+	`addon_id` VARCHAR(25) NOT NULL,
+	`path` VARCHAR(255) NOT NULL,
+	`filename` VARCHAR(255) NOT NULL,
+	`data` TEXT NOT NULL,
+	`time_registered` TIMESTAMP NOT NULL DEFAULT current_timestamp
+);";
+
+foreach ($sql as $s) {
+	$result = $db->query($s);
+	if (DB::IsError($result)) {
+		die_freepbx($result->getDebugInfo());
+	}
+	unset($result);
+}
+
+$sql = array();
+
+$sql[] = "INSERT INTO digiumaddoninstaller_system (`variable`, `value`) VALUES ('bit', '32')";
+$sql[] = "INSERT INTO digiumaddoninstaller_system (`variable`, `value`) VALUES ('hasinited', 'yes')";
+$sql[] = "INSERT INTO digiumaddoninstaller_system (`variable`, `value`) VALUES ('hasyum', 'yes')";
+$sql[] = "INSERT INTO digiumaddoninstaller_system (`variable`, `value`) VALUES ('hasyumaccess', 'yes')";
+$sql[] = "INSERT INTO digiumaddoninstaller_system (`variable`, `value`) VALUES ('lastupdated', NOW())";
+
+foreach ($sql as $s) {
+	$result = $db->query($s);
+	unset($result);
+}
+
+$sql = sprintf('UPDATE digiumaddoninstaller_system SET value="%s" WHERE variable="bit";', $bit);
+$result = $db->query($sql);
+if (DB::IsError($regs)) {
+	die_freepbx($dls->getDebugInfo());
+	return false;
+}
+
+//end of file

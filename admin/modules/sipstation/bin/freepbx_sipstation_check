@@ -1,0 +1,77 @@
+#!/usr/bin/env php
+<?php
+if (!@include_once(getenv('FREEPBX_CONF') ? getenv('FREEPBX_CONF') : '/etc/freepbx.conf')) {
+	include_once('/etc/asterisk/freepbx.conf');
+}
+
+$ss = \FreePBX::Sipstation()->ss;
+
+$key = $ss->get_key();
+if(empty($key)){
+	echo _("No key present, exiting\r\n");
+	exit(1);
+}
+
+$keyvalid = $ss->confirm_key($key);
+if( $keyvalid != 'valid'){
+	echo sprintf(_("Could not validate key. Result: %s\r\n"),$keyvalid);
+	exit(2);
+}
+
+$ssconfig = $ss->retrieve_saved_config();
+$cached = true;
+if(!$ssconfig){
+	$ssconfig = $ss->get_config($key);
+	$sipuser = $ssconfig['sip_username'];
+	$cached = false;
+}
+
+if($cached){
+	$sipuser = $ssconfig['sip_info']['sip_username'];
+	$ssconfig = $ssconfig['customer_info'];
+}
+
+$atype = $ssconfig['account_type'];
+$current = new \DateTime('NOW');
+$expiry = new \DateTime($ssconfig['expiration']);
+$expired = ($current > $expiry);
+
+//Confirm from the server we should be expired. Don't rely on cached data for this.
+if($expired && $cached){
+	$ssconfig = $ss->get_config($key);
+	$expiry = new \DateTime($ssconfig['expiration']);
+	$expired = ($current > $expiry);
+}
+
+if ($atype == "TRIAL" && ($expired || !isset($ssconfig['expiration']))) {
+	//kill trunks/routes
+	$pdb = \FreePBX::Database();
+
+	$sql = 'SELECT * FROM trunks WHERE name LIKE ?';
+	$stm = $pdb->prepare($sql);
+	$stm->bindValue(1, "%$sipuser", \PDO::PARAM_STR);
+	$stm->execute();
+
+	while ($results = $stm->fetch()) {
+		$tid = $results['trunkid'];
+		core_trunks_del($tid,'sip');
+	}
+
+	$routes = core_routing_list();
+	$sql = "SELECT data FROM module_xml WHERE id = 'ss_route'";
+	$dat = sql($sql, "getOne");
+
+	if(!empty($dat)) {
+		$routes = json_decode($dat,TRUE);
+		foreach($routes['outbound_routes'] as $id) {
+			core_routing_delbyid($id);
+		}
+	}
+
+	//Kill the key
+	$ss->remove_key();
+
+	//kill cached config
+	$ss->del_saved_config();
+	needreload();
+}

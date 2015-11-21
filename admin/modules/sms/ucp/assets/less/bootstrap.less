@@ -1,0 +1,91 @@
+#module-page-sms {
+	.message-table {
+	    font-size: 90%;
+	}
+	.sms-message {
+	    color: black;
+	    background-color: rgba(255, 255, 255, 0.5);
+	    a {
+	        cursor: pointer;
+	    }
+	}
+	.sms-message.new {
+	    font-weight: bold;
+	}
+	.sms-message-body-container {
+		background-color: #f5f5f5;
+		display: none;
+	}
+	.sms-message-body {
+		font-family: sans-serif;
+		height:150px;
+		overflow: auto;
+		padding: 5px;
+		.full-date {
+			font-family: 'cinzel';
+		}
+		.date {
+			color: gray;
+			font-style:italic
+		}
+		.name {
+			font-weight: bold;
+		}
+		.full-date {
+			margin: auto;
+			margin-left: 50%;
+			font-size: 105%;
+			font-weight: bold;
+		}
+		hr {
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		.yellow {
+			background-color: yellow;
+		}
+	}
+	.msginfo {
+	    position: absolute;
+	}
+	.msginfo.date {
+	    left:0px;
+	}
+	.msginfo.time {
+	    left:10px;
+	}
+	.msginfo.callerid {
+	    left:20px;
+	}
+	.msginfo.priority {
+	    left:30px;
+	}
+	.msginfo.mailbox {
+	    left:40px;
+	}
+	.mailbox-header {
+	    font-size:400%;
+	}
+
+	#sms-table {
+		.actions {
+			i {
+				color: black;
+				font-size:130%;
+				margin-right: 5px;
+			}
+		}
+		.message-header {
+			th:not(.noclick) {
+				i {
+					float: right;
+				}
+				cursor: pointer;
+			}
+			th:not(.noclick):hover {
+				background-color:#f5f5f5;
+			}
+			background-color: aliceblue;
+		}
+	}
+}

@@ -1,0 +1,76 @@
+<module>
+	<rawname>userman</rawname>
+	<name>User Management</name>
+	<version>12.0.26</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>AGPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
+	<repo>standard</repo>
+	<description>
+		This Module manages all FreePBX users excluding Administrators (at this time).
+		It allows an Administrator to create a User Account that can be used by other applications for login or API purposes.
+		Modules like iSymphony, Rest API and User Control Panel use this module to manage their users.
+	</description>
+	<changelog>
+		*12.0.26* Better control on knowing if a setting exists or is false
+		*12.0.25* Return true if the updateUserData function succeeds
+		*12.0.24* FREEPBX-8527 wrap in a try catch just in case
+		*12.0.23* Fix for resetting of passwords
+		*12.0.22* FREEPBX-8429 Send email to all users
+		*12.0.21* Allow resetting of passwords
+		*12.0.20* FREEPBX-8477 Move Send Email option to bottom of Userman Page
+		*12.0.19* FREEPBX-8487 Make amportal a userman m update existing user man accounts
+		*12.0.18* FREEPBX-8435 FREEPBX-8428 Changes for command line functions
+		*12.0.17* Some updates for contact manager
+		*12.0.16* Add additional fields for contact manager
+		*12.0.15* Global Settings Regression
+		*12.0.14* FREEPBX-8189 Unable to edit subject of UCP welcome message
+		*12.0.13* FREEPBX-8246 Unable to delete extension with no links in userman
+		*12.0.12* Fix spelling FREEPBX-8189
+		*12.0.11* Remove beta status
+		*12.0.10* Invisible display names...
+		*12.0.9* Provide a method to get contact details (hookable)
+		*12.0.8* NULL values if they are empty
+		*12.0.7* Add new Display Name Field
+		*12.0.6* Escape out class
+		*12.0.5* User proper 12 hooking
+		*12.0.4* FREEPBX-7797 require confirmation before user delete
+		*12.0.3* FREEPBX-8049 Auto Generation of User Management from ARI (amportal a userman migrate)
+		*12.0.2* Tweaks and cleanup
+		*12.0.1* Redo module_hook calls to use static obj
+		*2.11.11* Send emails out on new user creation or on editing
+		*2.11.10* FREEPBX-7494 Userman automaticly links like extensions with leading 0
+		*2.11.9* Finishing touches to creating new user from extensions page
+		*2.11.8* Sorting order and display fixes
+		*2.11.7* Check for Class instead of version
+		*2.11.6* Update to Extra attributes, if they dont exist dont erase them
+		*2.11.5* FREEPBX-7686 can not edit user
+		*2.11.4* Prevent duplicate usernames when changing username
+		*2.11.3* FREEPBX-7405 Unlink Extension from User when Extension is deleted
+		*2.11.2* Cleanup and languaging and some javascript helpers
+		*2.11.0beta10* Update license
+		*2.11.0beta9* Fixe bug when assigning a user to an extension
+		*2.11.0beta8* Fixes FREEPBX-7253 dont try to use the array if its false
+		*2.11.0beta7* Fixes FREEPBX-7245 forgetting user data on inital add
+		*2.11.0beta6* Skinning Changes
+		*2.11.0beta5* Spelling Mistakes
+		*2.11.0beta4* Cleanup and Extensive Documentation
+		*2.11.0beta3* Move Processes into hook function for 2.11
+		*2.11.0beta2* Fixed the order of updating users
+		*2.11.0beta1* Change to beta
+		*2.11.0alpha2* Add more fields
+		*2.11.0alpha1* Initial Module
+	</changelog>
+	<info></info>
+	<category>Admin</category>
+	<menuitems>
+		<userman>User Management</userman>
+	</menuitems>
+	<depends>
+		<phpversion>5.3.3</phpversion>
+		<version>12.0.1rc16</version>
+	</depends>
+	<supported>
+		<version>12.0</version>
+	</supported>
+</module>

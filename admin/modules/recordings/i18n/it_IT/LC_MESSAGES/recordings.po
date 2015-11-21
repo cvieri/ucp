@@ -1,0 +1,353 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-11 13:30-0400\n"
+"PO-Revision-Date: 2011-07-10 09:30+0100\n"
+"Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+
+#: page.recordings.php:170
+msgid " dial"
+msgstr " chiamare"
+
+#: assets/js/chosen.jquery.min.js:10
+msgid "):this.generate_field_id(),this.container_id+="
+msgstr ""
+
+#: page.recordings.php:50 page.recordings.php:51
+msgid "** MISSING FEATURE CODE **"
+msgstr "** CODICE SERVIZIO MANCANTE **"
+
+#: page.recordings.php:166 page.recordings.php:418
+msgid "Add Recording"
+msgstr "Aggiungi Registrazione"
+
+#: page.recordings.php:212
+msgid "After recording or uploading,"
+msgstr "Dopo la registrazione o il caricamento,"
+
+#: page.recordings.php:184
+msgid ""
+"Alternatively, upload a recording in any supported asterisk format. Note "
+"that if you're using .wav, (eg, recorded with Microsoft Recorder) the file "
+"<b>must</b> be PCM Encoded, 16 Bits, at 8000Hz"
+msgstr ""
+"In alternativa, caricare una registrazione in uno dei formati supportati da "
+"asterisk. Se si utilizza il formato .wav (registrato per esempio con il "
+"Registratore di Microsoft Windows) il file <b>deve</b> essere del formato "
+"PCM, 16Bit, 8000Hz"
+
+#: page.recordings.php:419 page.recordings.php:495
+msgid "Built-in Recordings"
+msgstr "Registrazioni interne"
+
+#: page.recordings.php:280
+msgid "Change Name"
+msgstr "Cambia Nome"
+
+#: install.php:7
+msgid "Check Recording"
+msgstr "Controllo Registrazione"
+
+#: page.recordings.php:330
+msgid ""
+"Check this box to create an options feature code that will allow this "
+"recording to be changed directly."
+msgstr ""
+"Attivare questa opzione per creare un codice servizio che permetterà di "
+"cambiare questa registrazione direttamente."
+
+#: page.recordings.php:226
+msgid "Click \"SAVE\" when you are satisfied with your recording"
+msgstr "Fare click su \"SALVA\" quando terminato"
+
+#: page.recordings.php:559
+msgid "Click here to play this recording"
+msgstr "Fare Click qui per riprodurre la registrazione"
+
+#: page.recordings.php:575
+msgid "Delete"
+msgstr "Elimina"
+
+#: page.recordings.php:284
+msgid "Descriptive Name"
+msgstr "Nome Descrittivo"
+
+#: page.recordings.php:344
+msgid "Direct Access Feature Code Not Available"
+msgstr "Codice Servizio diretto non disponibile"
+
+#: page.recordings.php:344
+msgid ""
+"Direct Access Feature Codes for recordings are not available for built in "
+"system recordings or compound recordings made of multiple individual ones."
+msgstr ""
+"I Codici Servizi diretti non sono disponibili per le registrazioni interne "
+"di sistema o per le registrazioni composte da più file."
+
+#: page.recordings.php:244
+msgid "Edit Recording"
+msgstr "Modifica Registrazione"
+
+#: page.recordings.php:75
+msgid "Failed to create"
+msgstr "Impossibile creare"
+
+#: page.recordings.php:337
+msgid "Feature Code Password"
+msgstr "Password Codice Servizio"
+
+#: page.recordings.php:353
+msgid "Files"
+msgstr "File"
+
+#: page.recordings.php:179 page.recordings.php:508
+msgid "Go"
+msgstr "Vai"
+
+#: page.recordings.php:178
+msgid ""
+"If you wish to make and verify recordings from your phone, please enter your "
+"extension number here:"
+msgstr ""
+"Se si desidera registrare o ascoltare una registrazione da telefono, "
+"immettere il numero del proprio interno:"
+
+#: page.recordings.php:213
+msgid "If you wish to re-record your message, dial"
+msgstr "Se si vuole registrare nuovamente il messaggio, chiamare"
+
+#: page.recordings.php:330
+msgid "Link to Feature Code"
+msgstr "Collega ad un Codice Servizio"
+
+#: page.recordings.php:102
+msgid "Make sure Asterisk is not running as root "
+msgstr "Assicurarsi che Asterisk non sia in esecuzione come root"
+
+#: page.recordings.php:93
+msgid "Make sure you have entered a proper name"
+msgstr "Assicurarsi di aver inserito un nome corretto"
+
+#: functions.inc.php:159
+#, php-format
+msgid "Missing Sound file auto-created from migration of %s module"
+msgstr "File Audio mancante auto-creato durante la migrazione del modulo %s"
+
+#: page.recordings.php:572
+msgid "Move Down"
+msgstr "Sposta Giù"
+
+#: page.recordings.php:566
+msgid "Move Up"
+msgstr "Sposta Su"
+
+#: page.recordings.php:220
+msgid "Name this Recording"
+msgstr "Nome"
+
+#: popup.php:49
+#, php-format
+msgid "No compatible wav, mp3 or gsm format found to play:<br /><br />%s"
+msgstr ""
+"Nessun formato compatibile wav, mp3 o gsm trovato da riprodurre:<br /><br />%"
+"s"
+
+#: functions.inc.php:220
+msgid "No long description available"
+msgstr "Nessuna descrizione completa disponibile"
+
+#: functions.inc.php:169
+#, php-format
+msgid "Non-Existent Recording in module %s"
+msgstr "Registrazione inesistente nel modulo %s"
+
+#: page.recordings.php:268
+msgid "Note, does not delete file from computer"
+msgstr "Nota: non rimuove il file dal computer"
+
+#: install.php:106 install.php:120
+msgid "OK"
+msgstr "OK"
+
+#: page.recordings.php:333
+#, php-format
+msgid "Optional Feature Code %s"
+msgstr "Codice Servizio Opzionale %s"
+
+#: page.recordings.php:337
+msgid ""
+"Optional password to protect access to this feature code which allows a user "
+"to re-record it."
+msgstr ""
+"Password opzionale per proteggere l'accesso a questo codice servizio che "
+"permette ad un utente di riregistrarlo."
+
+#: page.recordings.php:472
+msgid "Please enter a valid Name for this System Recording"
+msgstr "Prego immettere un Nome valido per questa Registrazione di Sistema"
+
+#: page.recordings.php:189
+msgid "Please wait until the page reloads."
+msgstr "Prego attendere che la pagina si ricarichi"
+
+#: install.php:5
+msgid "Recordings"
+msgstr "Registrazioni"
+
+#: page.recordings.php:264
+msgid "Remove Recording"
+msgstr "Rimuovi Registrazione"
+
+#: page.recordings.php:228 page.recordings.php:365
+msgid "Save"
+msgstr "Salva"
+
+#: install.php:6
+msgid "Save Recording"
+msgstr "Salva Registrazione"
+
+#: page.recordings.php:110
+msgid "Saved"
+msgstr "Salvato"
+
+#: page.recordings.php:496
+msgid "Select System Recording:"
+msgstr "Selezionare la Registrazione di Sistema:"
+
+#: page.recordings.php:171
+msgid "Start speaking at the tone. Press # when finished."
+msgstr ""
+
+#: page.recordings.php:167
+msgid "Step 1: Record or upload"
+msgstr "Fase 1: Registrazione o caricamento"
+
+#: page.recordings.php:216
+msgid "Step 2: Name"
+msgstr "Fase 2: Nome"
+
+#: page.recordings.php:211
+msgid "Step 2: Verify"
+msgstr "Fase 2: Verifica"
+
+#: page.recordings.php:214
+msgid "Step 3: Name"
+msgstr "Fase 3: Nome"
+
+#: page.recordings.php:202
+msgid "Successfully uploaded"
+msgstr "Caricato con successo"
+
+#: page.recordings.php:110 page.recordings.php:142
+msgid "System Recording"
+msgstr "Registrazione di Sistema"
+
+#: page.recordings.php:165 page.recordings.php:243 page.recordings.php:494
+msgid "System Recordings"
+msgstr "Registrazioni di Sistema"
+
+#: functions.inc.php:170
+#, php-format
+msgid ""
+"The %s referenced a recording file listed below that does not exists. An "
+"entry has been generated, named %s, with the referenced file(s) but you "
+"should confirm that it really works and the real files exist. The file(s) "
+"referenced: %s "
+msgstr ""
+"%s fa riferimento ad un file di registrazione che non esiste. Una voce è "
+"stata generata, nominata %s, insieme ai file di riferimento ma dovresti "
+"confermare che questi realmente esistono. I file sono : %s"
+
+#: page.recordings.php:280
+msgid "This changes the short name, visible on the right, of this recording"
+msgstr "Questo cambia il nome breve della registrazione, visibile sulla destra"
+
+#: page.recordings.php:284
+msgid ""
+"This is displayed, as a hint, when selecting this recording in Queues, "
+"Digital Receptionist, etc"
+msgstr ""
+"Questo è visualizzato come consiglio, quando si seleziona questa "
+"registrazione nelle Code, nell'IVR, ecc."
+
+#: page.recordings.php:255
+msgid ""
+"This recording is being used in the following instances. You can not remove "
+"this recording while being used. To re-record, you can enable and use the "
+"feature code below if allowed."
+msgstr ""
+"Questa registrazione è utilizzata dalle seguenti istanze. Non puoi rimuovere "
+"questa registrazione quando è in uso. Per ri-registrarla, puoi attivare ed "
+"utilizzare il codice servizio qui sotto se permesso."
+
+#: page.recordings.php:130
+msgid "Unable to locate"
+msgstr "Impossibile trovare"
+
+#: page.recordings.php:142
+msgid "Updated"
+msgstr "Aggiornato"
+
+#: page.recordings.php:189
+msgid "Upload"
+msgstr "Carica"
+
+#: page.recordings.php:255
+msgid "Usage List"
+msgstr "Lista"
+
+#: page.recordings.php:170
+msgid "Using your phone,"
+msgstr "Utilizzando il proprio telefono,"
+
+#: page.recordings.php:98
+msgid "[ERROR] REMOVING TEMPORARY RECORDING:"
+msgstr "[ERRORE] DURANTE LA RIMOZIONE DELLA REGISTRAZIONE TEMPORANEA:"
+
+#: page.recordings.php:89
+msgid "[ERROR] SAVING RECORDING:"
+msgstr "[ERRORE] DURANTE IL SALVATAGGIO DELLA REGISTRAZIONE:"
+
+#: page.recordings.php:81
+msgid "[ERROR] The Recorded File Does Not exists:"
+msgstr "[ERRORE] Il file registrato non esiste:"
+
+#: install.php:108 install.php:122
+msgid "already exists"
+msgstr "già esiste"
+
+#: page.recordings.php:172
+msgid "and speak the message you wish to record. Press # when finished."
+msgstr ""
+
+#: install.php:96
+msgid "checking for fcode field.."
+msgstr "controllo il campo fcode.."
+
+#: install.php:110
+msgid "checking for fcode_pass field.."
+msgstr "controllo il campo fcode_pass.."
+
+#: page.recordings.php:212
+msgid "dial"
+msgstr ""
+
+#: page.recordings.php:212
+msgid "to listen to your recording."
+msgstr "per ascoltare il messaggio"
+
+#: page.recordings.php:130
+msgid "with a a valid suffix"
+msgstr "con un suffisso valido"

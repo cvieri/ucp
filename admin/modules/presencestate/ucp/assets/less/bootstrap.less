@@ -1,0 +1,103 @@
+#module-page-presencestate {
+	.pssettings {
+		background-color: aliceblue;
+		border-radius: 10px;
+		padding: 10px;
+		width: 390px;
+		@media only screen and (max-width : 991px) {
+		    width: 100%;
+		}
+	}
+
+	.state-group {
+		padding-left: 15px;
+		.message {
+			font-size: 90%;
+			font-style: italic;
+			margin-top: -11px;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+/* LOGGED IN CONTENT DISPLAY */
+/* BREADCRUMB/MENU/LOGOUT BAR */
+#nav-bar-background {
+	#top-dashboard-nav-right .nav-btns {
+		#nav-btn-presencestate {
+			display: none;
+			float: left;
+			overflow: hidden;
+			position: relative;
+			white-space: nowrap;
+			transition: width 1s;
+			padding-left: 1px;
+			width: 26px;
+			.icon {
+				i {
+					color: rgb(209, 209, 209);
+					padding-left: 1px;
+				}
+				width: 28px;
+				display: inline-block;
+				position: relative;
+			}
+			.p-container {
+				display: inline;
+				position: absolute;
+				overflow: hidden;
+				.p-msg {
+					text-indent: 0px;
+					margin: 0 auto;
+					overflow: hidden;
+					white-space: nowrap;
+					box-sizing: border-box;
+					display: inline-block;
+					position: relative;
+					font-size: initial;
+					top: 1px;
+					width: 160px;
+					height: 21px;
+				}
+			}
+		}
+		#nav-btn-presencestate:hover, #nav-btn-presencestate.active {
+			width: 189px;
+		}
+
+	}
+}
+
+#presencestate-menu {
+	border-bottom: 0px;
+	width: 193px;
+	.statuses {
+		list-style: none;
+		text-align: left;
+		transition: max-height .5s, border-bottom .5s;
+		max-height: 0px;
+		overflow: hidden;
+		ol {
+			list-style: none;
+			padding: 0;
+			.presence-item {
+				cursor: pointer;
+				padding: 5px;
+				i {
+					padding-right: 2px;
+				}
+			}
+			.presence-item:hover {
+				text-decoration: none;
+				color: #262626;
+				background-color: #ffffff;
+			}
+		}
+	}
+}
+#presencestate-menu.active > .statuses {
+	max-height: 250px;
+	border-bottom: 1px solid #cccccc;
+	overflow-x: hidden;
+	overflow-y: auto;
+}

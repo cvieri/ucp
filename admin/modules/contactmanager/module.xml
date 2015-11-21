@@ -1,0 +1,50 @@
+<module>
+		<rawname>contactmanager</rawname>
+		<repo>standard</repo>
+		<name>Contact Manager</name>
+		<version>12.0.3</version>
+		<publisher>Schmooze Com Inc</publisher>
+		<license>GPLv3+</license>
+		<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+		<changelog>
+				*12.0.3* FREEPBX-9098 Increase timeout and max file size for contact import.
+				*12.0.2* FREEPBX-8386 Add tel: into contact manager. Readjust other values.
+				*12.0.1* FREEPBX-8557 allow editing contacts in UCP
+				*12.0.0beta14* FREEPBX-8305 Populate placeholders for users when creating/editing an entry
+				*12.0.0beta13* FREEPBX-8514 websites for contact manager not displaying http by default
+				*12.0.0beta12* FREEPBX-8366 Allow searching and sorting of contacts in UCP
+				*12.0.0beta11* FREEPBX-8426 dont control miscdests orphan checking
+				*12.0.0beta10* Make address a textarea
+				*12.0.0beta9* Add CSV import/export of contacts
+				*12.0.0beta8* FREEPBX-8203 contacts manager as destination
+				*12.0.0beta7* Updates for xmpp display, internal number display and ordering of actions
+				*12.0.0beta6* Allow hiding users in user manager from contact manager
+				*12.0.0beta5* If its a number then strip all non digits
+				*12.0.0beta4* Click to action support. Also fixed internal contact lookups
+				*12.0.0beta3* UCP Global Support
+				*12.0.0beta2* Add additional external contact fields.
+				*12.0.0beta1* First beta release.
+		</changelog>
+		<category>Admin</category>
+		<description>
+				Contact Manager
+		</description>
+		<menuitems>
+				<contactmanager beta="yes" needsenginedb="yes">Contact Manager</contactmanager>
+		</menuitems>
+		<depends>
+				<version>12.0.0</version>
+				<module>userman ge 12.0.17</module>
+		</depends>
+		<supported>
+				<version>12.0</version>
+		</supported>
+		<hooks>
+				<userman namespace="FreePBX\modules" class="Userman">
+						<method namespace="FreePBX\modules" class="Contactmanager" callingMethod="delUser">usermanDelUser</method>
+						<method namespace="FreePBX\modules" class="Contactmanager" callingMethod="addUser">usermanAddUser</method>
+						<method namespace="FreePBX\modules" class="Contactmanager" callingMethod="updateUser">usermanUpdateUser</method>
+						<method namespace="FreePBX\modules" class="Contactmanager" callingMethod="myShowPage">usermanShowPage</method>
+				</userman>
+		</hooks>
+</module>

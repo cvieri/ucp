@@ -1,0 +1,144 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for presencestate
+# Copyright (C) 2008-2015 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-24 16:48-0400\n"
+"PO-Revision-Date: 2015-04-25 08:05+0200\n"
+"Last-Translator: Ernesto <ecasas@sangoma.com>\n"
+"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
+"presencestate/es_ES/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
+
+#: presencestate.i18n.php:6 presencestate.i18n.php:12
+msgid "Admin"
+msgstr "Administrador"
+
+#: functions.inc.php:7 ucp/Presencestate.class.php:119
+#: ucp/Presencestate.class.php:212
+msgid "Available"
+msgstr "Disponible"
+
+#: functions.inc.php:9 ucp/Presencestate.class.php:122
+#: ucp/Presencestate.class.php:215
+msgid "Away"
+msgstr "Alejado"
+
+#: functions.inc.php:8 ucp/Presencestate.class.php:120
+#: ucp/Presencestate.class.php:213
+msgid "Chat"
+msgstr "Chatear"
+
+#: functions.inc.php:10
+msgid "DND"
+msgstr "DND"
+
+#: ucp/views/settings.php:25
+msgid "Define Actions on A Status Change"
+msgstr "Definir acciones en un cambio de estado"
+
+#: page.presencestate.php:15 page.presencestate.php:82
+msgid "Delete"
+msgstr "Eliminar"
+
+#: ucp/views/settings.php:9 ucp/views/settings.php:18
+msgid "Do Not Change"
+msgstr "No Cambiar"
+
+#: ucp/Presencestate.class.php:92 ucp/Presencestate.class.php:123
+#: ucp/Presencestate.class.php:216
+msgid "Do Not Disturb"
+msgstr "No Molestar"
+
+#: ucp/Presencestate.class.php:91
+msgid "Do Nothing"
+msgstr "No haga nada"
+
+#: Presencestate.class.php:50
+msgid "Enable Presence"
+msgstr "Habilitar Presencia"
+
+#: functions.inc.php:11 ucp/Presencestate.class.php:121
+#: ucp/Presencestate.class.php:214
+msgid "Extended Away"
+msgstr "Lejos extendido"
+
+#: ucp/Presencestate.class.php:93
+msgid "Findme/Follow Me"
+msgstr "Encuentra-Me/Sigue-Me"
+
+#: presencestate.i18n.php:8
+msgid "Manage list of presence states."
+msgstr "manejar listas de estados de presencia."
+
+#: page.presencestate.php:74
+msgid "Message"
+msgstr "Mensaje"
+
+#: page.presencestate.php:33
+msgid "New Presence State"
+msgstr "Nuevo Estado de Presencia"
+
+#: ucp/Presencestate.class.php:125 ucp/Presencestate.class.php:218
+msgid "Offline"
+msgstr "Fuera de Linea"
+
+#: ucp/views/settings.php:16
+msgid "On Browser Close or UCP Logout Set Status to"
+msgstr "Al cerrar Navegador o salir de UCP ponga en estado en"
+
+#: ucp/views/settings.php:7
+msgid "On UCP Login Set Status to"
+msgstr "Al entrar a UCP ponga estado en"
+
+#: ucp/Presencestate.class.php:249
+msgid "Presence"
+msgstr "Presencia"
+
+#: presencestate.i18n.php:4 presencestate.i18n.php:10
+msgid "Presence State"
+msgstr "Estado de Presencia"
+
+#: ucp/views/settings.php:2
+msgid "Presence State Settings"
+msgstr "Configuración Estado de Presencia"
+
+#: page.presencestate.php:63
+msgid "Presence Status"
+msgstr "Estado de Presencia"
+
+#: ucp/assets/js/global.js:35
+msgid "Status Not Set"
+msgstr "Estado no establecido"
+
+#: page.presencestate.php:80
+msgid "Submit"
+msgstr "Enviar"
+
+#: page.presencestate.php:71
+msgid "Type"
+msgstr "Tipo"
+
+#: functions.inc.php:12 ucp/Presencestate.class.php:124
+#: ucp/Presencestate.class.php:217
+msgid "Unavailable"
+msgstr "Indisponible"
+
+#: Presencestate.class.php:50
+msgid ""
+"Whether to allow this user to be able to change their presence state/status "
+"in UCP"
+msgstr ""
+"Ya sea para permitir que este usuario sea capaz de cambiar su estado de "
+"presencia / estado UCP"

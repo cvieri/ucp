@@ -1,0 +1,38 @@
+<module>
+	<rawname>customappsreg</rawname>
+	<repo>standard</repo>
+	<name>Custom Applications</name>
+	<version>12.0.1</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<category>Admin</category>
+	<description>
+		Registry to add custom extensions and destinations that may be created and used so that the Extensions and Destinations Registry can include these.
+	</description>
+	<menuitems>
+		<customextens>Custom Extensions</customextens>
+		<customdests>Custom Destinations</customdests>
+	</menuitems>
+	<popovers>
+		<customappsreg>
+			<display>customdests</display>
+		</customappsreg>
+ 	</popovers>
+	<changelog>
+		*12.0.1* Add advanced 'Return' function.
+		*2.11.0.2* Add license info
+		*2.11.0.1* Custom Application Popover Allowance
+		*2.11.0.0* #6051
+		*2.10.0.1* #5478 
+		*2.10.0.0* new version changes
+	</changelog>
+  <depends>
+    <version>12.0.54</version>
+  </depends>
+  <location></location>
+  <md5sum></md5sum>
+  <supported>
+    <version>12.0</version>
+  </supported>
+</module>

@@ -1,0 +1,69 @@
+<module>
+	<rawname>queues</rawname>
+	<repo>standard</repo>
+	<name>Queues</name>
+	<version>12.0.20</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv2+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-2.0.txt</licenselink>
+	<category>Applications</category>
+	<description>
+		Creates a queue where calls are placed on hold and answered on a first-in, first-out basis. Many options are available, including ring strategy for agents, caller announcements, max wait times, etc.
+	</description>
+	<changelog>
+		*12.0.20* FREEPBX-6838 Fix queue pause hint for Asterisk 12+
+		*12.0.19* FREEPBX-8396 Add PJSIP to queues
+		*12.0.18* Localization fixes
+		*12.0.17* FREEPBX-8872 Revert static QUEUES_UPDATECDR removal
+		*12.0.16* FREEPBX-8400 Fix syntax error in dialplan
+		*12.0.15* FREEPBX-6838 Fix queue pause hint syntax for Asterisk 12
+		*12.0.14* FREEPBX-8318 Play join message first then start music
+		*12.0.13.1* Fix issue on Asterisk 11
+		*12.0.13* FREEPBX-8216 eventmemberstatus and eventwhencalled removed as of Asterisk 12
+		*12.0.12* Call Recordings rewrite
+		*12.0.11* Reduce the number of hints/extensions generated for queues.
+		*12.0.10* Redo module_hook calls to use static obj
+		*12.0.9* ?
+		*12.0.8* Add support for vqplus Callback Queues
+		*12.0.7* Dont initalize these settings anymore
+		*12.0.6* Don't check for devstate anymore, it's always enabled
+		*12.0.5* Add variables to store which queue a call is joining.
+		*12.0.4* FREEPBX-1953
+		*12.0.3* Add hints for callers in queues.
+		*12.0.2* Forgot one label.
+		*12.0.1* Fix label ordering in a radioset, #7215 -- __construct missing.
+		*12.0.0* FREEPBX-7119 hide depreciated settings and set the to true
+		*2.11.0.15* #7202 MoH not being set properly
+		*2.11.0.14* #6957
+		*2.11.0.13* Added ::create() call
+		*2.11.0.12* #7011
+		*2.11.0.11* #6991
+		*2.11.0.10* #6836, #6881, #6927
+		*2.11.0.9* #6744
+		*2.11.0.8* #6703
+		*2.11.0.7* Added better granularity and range to some Queue time options
+		*2.11.0.6* Fixes #6446, queue recording
+		*2.11.0.5* mis-formed html
+		*2.11.0.4* #6333, adds advanced settings for default starting Queue Event values.
+		*2.11.0.3* add gotodest splicing label
+		*2.11.0.2* remove some dialplan warnings
+		*2.11.0.1* #4767, #6084, #5895, #6092
+		*2.11.0.0* #6051
+	</changelog>
+	<depends>
+		<module>callrecording ge 12.0.1</module>
+	</depends>
+	<menuitems>
+		<queues needsenginedb="yes">Queues</queues>
+	</menuitems>
+	<popovers>
+		<queues>
+			<display>queues</display>
+		</queues>
+	</popovers>
+	<supported>
+		<version>12.0</version>
+	</supported>
+	<location>release/2.11/queues-2.11.0.11.tgz</location>
+	<md5sum>71b1461cc558320b5f3ecf238d093da6</md5sum>
+</module>

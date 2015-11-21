@@ -1,0 +1,73 @@
+<module>
+	<rawname>sipstation</rawname>
+	<repo>standard</repo>
+	<name>SIPSTATION</name>
+	<version>12.0.8.2</version>
+	<category>Connectivity</category>
+	<menuitems>
+		<sipstation>SIPSTATION</sipstation>
+	</menuitems>
+	<description>
+		This module is used to configure, manage and troubleshoot your SIPSTATION(tm) FreePBX.com SIP trunks and DIDs. The license on this source code is NOT GPL Open Source, it is a proprietary Free to Use license.
+	</description>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>Commercial</license>
+	<licenselink>http://literature.schmoozecom.com/EUA/FreePBXCommercialModule-EndUserAgreement.txt</licenselink>
+	<candisable>no</candisable>
+	<canuninstall>no</canuninstall>
+	<changelog>
+		*12.0.8.2* Fix whitescreen on machines with no zend
+		*12.0.7* Fixes cancellation of free trial accounts
+		*12.0.6* Dont show OOBE if a key already exists
+		*12.0.5* Added free trials and OOBE
+		*12.0.4* Added store page under new tab
+		*12.0.3* Internal Styling changes
+		*12.0.2* FREEPBX-7978 no apply bar when adding sipstation, fixed codec issues, added basic emoji support for sms
+		*12.0.1* Fixes to sms item name
+		*12.0.0alpha8* Case Sensitive Parts
+		*12.0.0alpha7* Allow new trunk settings to be added to chan_sip
+		*12.0.0alpha6* See SMS Status from within this module
+		*12.0.0alpha4* Allow disabling SMS completely in UCP
+		*12.0.0alpha3* FREEI-217 Dont allow SMS on Toll Free DIDs
+		*12.0.0alpha2* Prevent fatal errors on device creation
+		*12.0.0alpha1* Added Text Messaging Support
+		*2.11.1.6* License update
+		*2.11.1.4* Add new 844 toll free route to our existing routes
+		*2.11.1.3* Allow users to set some custom settings. Sorry
+		*2.11.1.2* Accept remote configuration changes and messages from SIPStation Store
+		*2.11.1.1* Support for PHP 5.1.6 - 5.3
+		*2.11.1.0beta13* Ability to collapse and expand sections fixed
+		*2.11.1.0beta12* Updated PEST Library.
+		*2.11.1.0beta11* Works with Extension Routes module, Set CID and Set Emergency CID Broken Out
+		*2.11.1.0beta10* Added setting of E911 CID per did (if extension was selected as inbound route)
+		*2.11.1.0beta9* Cosmetic Changes
+		*2.11.1.0beta8* Automatic Route Creation
+		*2.11.1.0beta7* Cosmetic Fixes. Failover Fixes. DID Clickable links to inbound routes. Outbound Routes Generation Page
+		*2.11.1.0beta5* Additions
+		*2.11.1.0beta4* Fixes for AJAX and E911s
+		*2.11.1.0beta3* Too many DIDs issues resolved
+		*2.11.1.0beta2* GUI Changes
+		*2.11.1.0beta1* New: Set E911 Address, Set Failovers, Set All Destinations, Completely New Backend Fixed: Removed most ajax page refreshes. All done behind the scenes
+		*2.11.0.2* #6399, route checkboxes incorrectly selected and reload bar up when it should not
+		*2.11.0.1* change text
+		*2.11.0.0* bump for 2.11 and change image
+	</changelog>
+	<depends>
+		<module>core ge 2.10</module>
+		<module>framework ge 12.0.59</module>
+		<module>userman ge 2.11</module>
+		<module>cdr</module>
+		<version>12.0.1beta24</version>
+	</depends>
+	<supported>
+		<version>12.0</version>
+	</supported>
+	<hooks>
+		<sms namespace="FreePBX\modules" class="Sms">
+			<method namespace="FreePBX\Modules" class="Sipstation" callingMethod="loadAdaptor">smsAdaptor</method>
+		</sms>
+	</hooks>
+	<oobe method="oobeHook" priority="5000" />
+	<location>release/2.11/sipstation-2.11.1.4.tgz</location>
+	<md5sum>cd89d523e8db158768d3afe1f201b192</md5sum>
+</module>

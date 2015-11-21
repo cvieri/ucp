@@ -1,0 +1,46 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for cxpanel
+# Copyright (C) 2008-2015 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-13 19:50-0400\n"
+"PO-Revision-Date: 2015-04-03 10:10+0200\n"
+"Last-Translator: Daver <daverjorge46@gmail.com>\n"
+"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/cxpanel/"
+"es_ES/>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
+
+#: Cxpanel.class.php:181
+#, php-format
+msgid "%s Login: %s"
+msgstr ""
+
+#~ msgid "Admin"
+#~ msgstr "Administrador"
+
+#~ msgid ""
+#~ "This module automatically configures the operator panel to reflect the "
+#~ "PBX configuration."
+#~ msgstr ""
+#~ "En este módulo configura automáticamente el panel del operador para "
+#~ "reflejar la configuración de PBX."
+
+#~ msgid "iSymphonyV3"
+#~ msgstr "\"iSymphonyV3\""
+
+#~ msgid "iSymphonyV3 Panel"
+#~ msgstr "Panel iSymphonyV3"
+
+#~ msgid "reports"
+#~ msgstr "reportes"

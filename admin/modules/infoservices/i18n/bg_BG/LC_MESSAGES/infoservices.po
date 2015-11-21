@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX v2.5\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"PO-Revision-Date: 2014-07-22 09:25+0200\n"
+"Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
+"Language-Team: Bulgarian "
+"<http://git.freepbx.org/projects/freepbx/infoservices/bg/>\n"
+"Language: bg_BG\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 1.10-dev\n"
+"X-Poedit-Language: Bulgarian\n"
+"X-Poedit-Country: BULGARIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+msgid "Info Services"
+msgstr "Информационни Услуги"
+
+msgid "Applications"
+msgstr "Приложения"
+
+msgid ""
+"Provides a number of applications accessible by feature codes: company "
+"directory, call trace (last call information), echo test, speaking clock, "
+"and speak current extension number."
+msgstr ""
+"Предоставя няколко приложения достъпни чрез специални кодове: фирмена "
+"директория, проследяване на разговор (информация за последен разговор), ехо "
+"тест, казва часа и продиктува текущия вътрешен номер."
+
+msgid "Directory"
+msgstr "Директория"
+
+msgid "Call Trace"
+msgstr "Проследяване на Разговор"
+
+msgid "Echo Test"
+msgstr "Ехо Тест"
+
+msgid "Speaking Clock"
+msgstr "Казва Часа"
+
+msgid "Speak Your Exten Number"
+msgstr "Продиктува Вашия Вътрешен Нмер"

@@ -1,0 +1,412 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# Copyright (C) 2008 Lónyai Gergely <alephlg@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 2.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-06 17:29-0500\n"
+"PO-Revision-Date: 2010-01-23 00:00+0100\n"
+"Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
+"Language-Team: Magyar <freepbx@freepbx.hu>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Hungarian\n"
+"X-Poedit-Country: HUNGARY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: page.conferences.php:83 page.conferences.php:136 page.conferences.php:151
+msgid "Add Conference"
+msgstr "Konferencia hozzásadása"
+
+#: page.conferences.php:165
+msgid "Admin PIN:"
+msgstr "Admin PIN:"
+
+#: page.conferences.php:331
+msgid "Allow Menu:"
+msgstr "Elfogadva menü:"
+
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+
+#: page.conferences.php:278
+msgid "Announce user join/leave"
+msgstr "Esemény felhasználó fel/lecsatlakozásakor"
+
+#: page.conferences.php:263
+msgid "Announce user(s) count on joining conference"
+msgstr "Esemény a felhasználók csatlakozásakor"
+
+#: conferences.i18n.php:6 conferences.i18n.php:12
+msgid "Applications"
+msgstr ""
+
+#: install.php:108
+msgid "Checking for users field.."
+msgstr ""
+
+#: install.php:29
+msgid "Checking if music field present.."
+msgstr ""
+
+#: install.php:48
+msgid "Checking if recordings need migration.."
+msgstr ""
+
+#: page.conferences.php:95
+msgid "Conference"
+msgstr "Konferencia"
+
+#: page.conferences.php:157
+msgid "Conference Name:"
+msgstr "Konferencianév"
+
+#: page.conferences.php:153
+msgid "Conference Number:"
+msgstr "Konferenciaszám:"
+
+#: page.conferences.php:169
+msgid "Conference Options"
+msgstr "Konferencia opciók"
+
+#: functions.inc.php:176
+#, php-format
+msgid "Conference Room %s : %s"
+msgstr ""
+
+#: page.conferences.php:119
+msgid "Conference:"
+msgstr "Konferencia:"
+
+#: functions.inc.php:402
+msgid "Conference: "
+msgstr "Konferencia:"
+
+#: functions.inc.php:195
+#, php-format
+msgid "Conference: %s"
+msgstr ""
+
+#: conferences.i18n.php:4 conferences.i18n.php:10
+msgid "Conferences"
+msgstr ""
+
+#: page.conferences.php:139
+msgid "Conflicting Extensions"
+msgstr "Mellékek ütközése"
+
+#: page.conferences.php:122
+#, php-format
+msgid "Delete Conference %s"
+msgstr "Konferencia törlése %s"
+
+#: page.conferences.php:151
+msgid "Edit Conference"
+msgstr "Konferencia szerkesztése"
+
+#: page.conferences.php:293
+msgid "Enable Music On Hold when the conference has a single caller"
+msgstr "Háttérzene engedélyezése, ha csak egy tagja van a konferenciának"
+
+#: page.conferences.php:165
+msgid ""
+"Enter a PIN number for the admin user.<br><br>This setting is optional "
+"unless the 'leader wait' option is in use, then this PIN will identify the "
+"leader."
+msgstr ""
+"Az admin felhasználó PIN száma.<br><br>Ezzel a beállítással a 'Vezetőre "
+"várakozás' opcióban megadható PIN számot lehet beállítani. Aki az említett "
+"időben megadja a PIN-t, az lesz a konferencia vezetője."
+
+#: install.php:116
+msgid "FATAL error"
+msgstr ""
+
+#: page.conferences.php:157
+msgid "Give this conference a brief name to help you identify it."
+msgstr "Adj meg a konferenciának egy jellemző nevet."
+
+#: page.conferences.php:172 page.conferences.php:189
+msgid "Join Message:"
+msgstr "Csatlakozó üzenet:"
+
+#: page.conferences.php:196
+msgid "Leader Wait:"
+msgstr "Vezetőre várakozás:"
+
+#: page.conferences.php:362
+msgid "Maximum Number of users allowed to join this conference."
+msgstr ""
+
+#: page.conferences.php:362
+msgid "Maximum Participants:"
+msgstr ""
+
+#: page.conferences.php:172
+msgid ""
+"Message to be played to the caller before joining the conference.<br><br>To "
+"add additional recordings please use the \"System Recordings\" MENU to the "
+"left"
+msgstr ""
+"Ez az üzenet lesz lejátszva a konferenciába csatlakozó hívóknak.<br><br>A "
+"saját felvételeidet a \"Rendszerfelvételek\" bal oldali menüpontban "
+"rögzítheted."
+
+#: page.conferences.php:189
+msgid ""
+"Message to be played to the caller before joining the conference.<br><br>You "
+"must install and enable the \"Systems Recordings\" Module to edit this option"
+msgstr ""
+"Ez az üzenet lesz lejátszva a konferenciába csatlakozó hívóknak."
+"<br><br>Használatához a \"Rendszerfelvételek\" modult telepítened, és "
+"engedélyezed kell."
+
+#: page.conferences.php:307
+msgid ""
+"Music (or Commercial) played to the caller while they wait in line for the "
+"conference to start. Choose \"inherit\" if you want the MoH class to be what "
+"is currently selected, such as by the inbound route.<br><br>  This music is "
+"defined in the \"Music on Hold\" to the left."
+msgstr ""
+
+#: page.conferences.php:307
+msgid "Music on Hold Class:"
+msgstr ""
+
+#: page.conferences.php:293
+msgid "Music on Hold:"
+msgstr "Háttérzene:"
+
+#: page.conferences.php:376
+msgid ""
+"Mute everyone when they initially join the conference. Please note that if "
+"you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
+"Yes to unmute yourself"
+msgstr ""
+
+#: page.conferences.php:376
+msgid "Mute on Join:"
+msgstr ""
+
+#: page.conferences.php:201 page.conferences.php:223 page.conferences.php:239
+#: page.conferences.php:256 page.conferences.php:268 page.conferences.php:283
+#: page.conferences.php:298 page.conferences.php:336 page.conferences.php:351
+#: page.conferences.php:381
+msgid "No"
+msgstr "Nem"
+
+#: page.conferences.php:367
+msgid "No Limit"
+msgstr ""
+
+#: page.conferences.php:177
+msgid "None"
+msgstr "Nincs"
+
+#: page.conferences.php:408
+msgid "Please enter a valid Conference Name"
+msgstr ""
+
+#: page.conferences.php:407
+msgid "Please enter a valid Conference Number"
+msgstr ""
+
+#: page.conferences.php:331
+msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
+msgstr "menü megmutatása (felhasználónak vagy adminnak) amikor '*' érkezik"
+
+#: page.conferences.php:251
+msgid "Quiet Mode:"
+msgstr "Néma üzemmód:"
+
+#: page.conferences.php:251
+msgid "Quiet mode (do not play enter/leave sounds)"
+msgstr "Csendes mód (nem játszik le zenét ki- és belépéskor)"
+
+#: page.conferences.php:346
+msgid "Record Conference:"
+msgstr "Konferencia rögzítése:"
+
+#: page.conferences.php:346
+msgid "Record the conference call"
+msgstr "Rögzíti a teljes konferenciabeszélgetést"
+
+#: page.conferences.php:232
+msgid ""
+"Sets talker detection. Asterisk will sends events on the Manager Interface "
+"identifying\n"
+"the channel that is talking. The talker will also be identified on the "
+"output of\n"
+"the conference list CLI command. Note: If Conferences Pro is installed and "
+"licensed this will always be enabled"
+msgstr ""
+
+#: page.conferences.php:393
+msgid "Submit Changes"
+msgstr ""
+
+#: page.conferences.php:232
+msgid "Talker Detection:"
+msgstr ""
+
+#: page.conferences.php:215
+msgid "Talker Optimization:"
+msgstr ""
+
+#: page.conferences.php:419
+msgid "The Conference Name provided is too long."
+msgstr ""
+
+#: page.conferences.php:411
+msgid "The user and admin can not have the same pin code."
+msgstr ""
+
+#: page.conferences.php:215
+msgid ""
+"Turns on talker optimization. With talker optimization, Asterisk treats "
+"talkers who\n"
+"are not speaking as being muted, meaning that no encoding is done on "
+"transmission\n"
+"and that received audio that is not registered as talking is omitted, "
+"causing no\n"
+"buildup in background noise."
+msgstr ""
+
+#: page.conferences.php:153
+msgid "Use this number to dial into the conference."
+msgstr "A szám, amit a conferencia eléréséhez tárcsázni kell."
+
+#: page.conferences.php:263
+msgid "User Count:"
+msgstr "Felhasználószámlálás:"
+
+#: page.conferences.php:161
+msgid "User PIN:"
+msgstr "Felhasználó PIN:"
+
+#: page.conferences.php:278
+msgid "User join/leave:"
+msgstr "Felhasználók fel/lecsatlakozása"
+
+#: page.conferences.php:196
+msgid ""
+"Wait until the conference leader (admin user) arrives before starting the "
+"conference"
+msgstr ""
+"Wárakozás a konferencia elindítása előtt a konferencia vezetőjére (admin)."
+
+#: page.conferences.php:19
+msgid "Warning! Extension"
+msgstr "Figyelem! Mellék"
+
+#: page.conferences.php:202 page.conferences.php:224 page.conferences.php:240
+#: page.conferences.php:257 page.conferences.php:269 page.conferences.php:284
+#: page.conferences.php:299 page.conferences.php:337 page.conferences.php:352
+#: page.conferences.php:382
+msgid "Yes"
+msgstr "Igen"
+
+#: page.conferences.php:161
+msgid ""
+"You can require callers to enter a password before they can enter this "
+"conference.<br><br>This setting is optional.<br><br>If either PIN is "
+"entered, the user will be prompted to enter a PIN."
+msgstr ""
+"A konferenciát hívó személynek ezt a jelszót kell megadnia."
+"<br><br>Opcionális beállítás<br><br>Ha megadsz egy PIN számot, akkor a "
+"felhasználónak ugyanezt a PIN-t kell majd a belépéshez megadnia."
+
+#: page.conferences.php:410
+msgid ""
+"You must set Allow Menu to Yes when not using a Leader or Admin in your "
+"conference, otherwise you will be unable to unmute yourself"
+msgstr ""
+
+#: page.conferences.php:409
+msgid ""
+"You must set an admin PIN for the Conference Leader when selecting the "
+"leader wait option"
+msgstr ""
+
+#: install.php:55
+msgid "adding joinmsg_id field.."
+msgstr ""
+
+#: install.php:33
+msgid "adding music field.."
+msgstr ""
+
+#: install.php:112
+msgid "adding.."
+msgstr ""
+
+#: install.php:105
+msgid "already migrated"
+msgstr ""
+
+#: install.php:43 install.php:122
+msgid "already present"
+msgstr ""
+
+#: page.conferences.php:320
+msgid "default"
+msgstr ""
+
+#: page.conferences.php:95
+msgid "deleted"
+msgstr "törölt"
+
+#: install.php:95
+msgid "dropping joinmsg field.."
+msgstr ""
+
+#: install.php:37 install.php:59 install.php:71 install.php:87
+msgid "fatal error"
+msgstr ""
+
+#: page.conferences.php:317
+msgid "inherit"
+msgstr ""
+
+#: page.conferences.php:19
+msgid "is not allowed for your account."
+msgstr "nem elfogadható a hozzáférés."
+
+#: install.php:67
+msgid "migrate to recording ids.."
+msgstr ""
+
+#: install.php:91
+#, php-format
+msgid "migrated %s entries"
+msgstr ""
+
+#: install.php:54
+msgid "migrating"
+msgstr ""
+
+#: install.php:99
+msgid "no joinmsg field???"
+msgstr ""
+
+#: install.php:40 install.php:62 install.php:101 install.php:119
+msgid "ok"
+msgstr ""

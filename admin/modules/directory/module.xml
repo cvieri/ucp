@@ -1,0 +1,51 @@
+<module>
+	<rawname>directory</rawname>
+	<repo>standard</repo>
+	<name>Directory</name>
+	<version>12.0.2</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<type>setup</type>
+	<category>Applications</category>
+	<menuitems>
+		<directory>Directory</directory>
+	</menuitems>
+	<popovers>
+		<directory>
+			<display>directory</display>
+			<action>add</action>
+		</directory>
+ 	</popovers>
+	<depends>
+		<version>12.0.1beta11</version>
+		<module>recordings ge 3.3.8</module>
+	</depends>
+	<changelog>
+		*12.0.2* FREEPBX-7418 Default Directory Disappearing, FREEPBX-8432 error logged everytime someone acesses IVR
+		*12.0.1* FREEPBX-7753 Support French accents in driectory
+		*12.0.0* Remove Toggle Val, use HTML5 placeholder instead
+		*2.11.0.5* Include license file
+		*2.11.0.4* FREEPBX-7244 The Asterisk Manager connnection needs to be made regardless.
+		*2.11.0.3* #6354
+		*2.11.0.2* #6354, #6840
+		*2.11.0.1* #6882, #6913
+		*2.11.0.0* #6051
+		*2.10.0.10* re #5784 -
+		*2.10.0.9* assotred bug fixes
+		*2.10.0.8* #5551
+		*2.10.0.7* smoother experience when using flite
+		*2.10.0.6* re #1076, #1067 - clarify help text, fix directory hook for ivr
+		*2.10.0.5* Security update; downstream changes
+		*2.10.0.4* Security update; downstream changes
+		*2.10.0.3* Security update; downstream changes
+		*2.10.0.2* #5463
+		*2.10.0.1* #5389
+		*2.10.0.0* new version changes
+	</changelog>
+	<supported>
+		<version>12.0</version>
+	</supported>
+	<location>release/2.11/directory-2.11.0.2.tgz</location>
+	<md5sum>29c493148b5a23e216eab918ed33e213</md5sum>
+</module>

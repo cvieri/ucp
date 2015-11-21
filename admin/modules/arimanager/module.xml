@@ -1,0 +1,28 @@
+<module>
+	<rawname>arimanager</rawname>
+	<repo>standard</repo>
+	<name>Asterisk REST Interface Users</name>
+	<version>12.0.3</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
+	<category>Settings</category>
+	<menuitems>
+		<arimanager>Asterisk REST Interface Users</arimanager>
+	</menuitems>
+	<changelog>
+		*12.0.3* Copyright and licensing
+		*12.0.2* FREEPBX-7793 Add Password generator to the ARI
+		*12.0.1* FREEPBX-7792 Add option to DELETE users
+		*12.0.0* Initial Release
+	</changelog>
+	<description>
+		Asterisk 12 introduces the Asterisk REST Interface (ARI), a set of RESTful API's for building Asterisk based applications. This module provides the ability to add and remove ARI users.
+	</description>
+	<depends>
+		<engine>asterisk 12</engine>
+	</depends>
+	<supported>
+		<version>12.0</version>
+	</supported>
+</module>

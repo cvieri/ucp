@@ -1,0 +1,55 @@
+<module>
+	<rawname>callrecording</rawname>
+	<repo>standard</repo>
+	<name>Call Recording</name>
+	<version>12.0.2.5</version>
+	<publisher>Schmooze Com Inc</publisher>
+	<license>AGPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
+	<candisable>no</candisable>
+	<canuninstall>no</canuninstall>
+	<category>Applications</category>
+	<description>
+		Provides much of the call recording functionality.
+	</description>
+	<menuitems>
+		<callrecording>Call Recording</callrecording>
+	</menuitems>
+ 	<popovers>
+		<callrecording>
+			<display>callrecording</display>
+		</callrecording>
+ 	</popovers>
+	<changelog>
+		*12.0.2.5 #8773 - this time for sure!
+		*12.0.2.4 #8773 #8787
+		*12.0.2.3* #8773
+		*12.0.2.2* #8434 Ensure recordings are restarted when possible
+		*12.0.2.1* #8482 Workaround ASTERISK-19853
+		*12.0.2* #8312 Fix recording on outgoing routes that hadn't had 'save' clicked on them.
+		*12.0.1.4* #8393 Remove legacy code
+		*12.0.1.3* #8482 Fix potential for unconfigured datestamp
+		*12.0.1.2* #8298
+		*12.0.1.1* Handle old 'delayed' entry
+		*12.0.1* Significant changes to the way Call Recordings work. See wiki.
+		*2.11.0.7* #7315
+		*2.11.0.6* Generate License file
+		*2.11.0.5* Use abstracted function for last insert id
+		*2.11.0.4* #6914, PBXAC-13
+		*2.11.0.3* #6766 (fixes regression from #6708)
+		*2.11.0.2* #6708
+		*2.11.0.1* #6051
+		*2.11.0.0* #5909 outbound route recording settings
+		*2.10.0.2* add mgr script for one-touch-record
+		*2.10.0.1* #5478
+	  	*2.10.0.0* New Module
+	</changelog>
+	<supported>
+		<version>12.0</version>
+	</supported>
+	<depends>
+		<module>core ge 12.0.7</module>
+	</depends>
+	<location></location>
+	<md5sum></md5sum>
+</module>
